@@ -10,9 +10,10 @@
 
 #include "frame_namespace.h"
 #include "frame_typedef.h"
-#include "frame_msg_impl.h"
+//#include "frame_msg_impl.h"
 #include "public_typedef.h"
 #include "common/common_api.h"
+#include "common/common_string.h"
 #include <stdio.h>
 
 FRAME_NAMESPACE_BEGIN

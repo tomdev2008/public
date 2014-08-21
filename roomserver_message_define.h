@@ -394,7 +394,7 @@ public:
 		}
 		nIdentityType = enmIdentityType_None;
 		nOnMicTime = 0;
-		nAccountID = 0;
+		nAccountID = enmInvalidAccountID;
 		strRoleName = "";
 		nSelfSetting = 0;
 		nLoginTimes = 0;
@@ -415,7 +415,7 @@ public:
 	RoleRank		arrRoleRank[MaxBeAdminPerPlayer];
 	IdentityType    nIdentityType;                      //身份
 	uint32_t		nOnMicTime;						//总共在麦上时长
-	uint32_t 		nAccountID;   //179ID
+	AccountID 		nAccountID;   //179ID
 	CString<MaxRoleNameLength> 	strRoleName; //玩家昵称
 	uint32_t		nSelfSetting;            //玩家的个人设置
 	uint32_t		nLoginTimes;	    	 //登录次数

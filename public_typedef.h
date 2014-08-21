@@ -907,15 +907,15 @@ typedef uint8_t					VipLevel;
 enum 
 {
 	enmVipLevel_NONE 				= 0x00, //未注册
-	enmVipLevel_REGISTER 			= 0x01, //已注册
-	enmVipLevel_RED 				= 0x02, //vip
-	enmVipLevel_PURPLE 				= 0x04, //荣耀vip
-	enmVipLevel_Silver_KING 		= 0x08, //银冠
-	enmVipLevel_Gold_KING 			= 0x10, //金冠
-	enmVipLevel_SUPER 				= 0x20, //水晶皇冠
-	enmVipLevel_DIAMOND 			= 0x40, //钻石皇冠
-	enmVipLevel_Black_DIAMOND 		= 0x60, //黑钻皇冠
-	enmVipLevel_TIP 				= 0x80, //至尊皇冠
+	enmVipLevel_Regist	 			= 0x01, //已注册
+	enmVipLevel_Gold 				= 0x02, //黄金vip
+	enmVipLevel_Diamond 			= 0x04, //钻石vip
+	enmVipLevel_Baron 				= 0x08, //男爵
+	enmVipLevel_Viscount 			= 0x10, //子爵
+	enmVipLevel_Earl 				= 0x20, //伯爵
+	enmVipLevel_Marquis 			= 0x40, //侯爵
+	enmVipLevel_Duke 				= 0x60, //公爵
+	enmVipLevel_King 				= 0x80, //国王
 };
 
 //用户等级
@@ -949,8 +949,9 @@ enum
 	enmEntityType_ClientGame        = 0x15,             //客户端游戏服务器
 	enmEntityType_Transmiter		= 0x16,				//媒体中转服务器
 	enmEntityType_AccountAgent		= 0x17,				//帐号代理服务器
+	enmEntityType_OptGate			= 0x18,				//运营后台网关服务器
 
-	enmEntityType_Count				= 0x17,				//服务器类型个数
+	enmEntityType_Count				= 0x18,				//服务器类型个数
 	enmEntityType_Client			= 0x80,				//客户端
 	enmEntityType_Web				= 0x81,				//web客户端
 };
